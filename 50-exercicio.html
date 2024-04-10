@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" <link
+        rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+   
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-image: url(imagens/FOTO.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+
+
+
+        }
+
+
+        h2 { margin-top: 40px;
+            margin: 20px 20px;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+
+
+        }
+
+        img {
+            float: right;
+            margin: 10px 20px;
+            border-radius: 10px;
+            border: 4px solid black;
+
+
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.2em;
+            margin: 30px 20px;
+
+        }
+
+
+
+        header {
+
+            background-color: black;
+            box-shadow: 0px 3px 10px #464646;
+            color: black;
+
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 6rem;
+
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo h1 {
+            color: #fff;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+
+
+        }
+
+        .nav-list ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin: 20px 30px;
+
+
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-size: 1.15rem;
+            color: #fff;
+            font-weight: 400;
+            border: 1px solid white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+
+        }
+
+        .login-button button {
+            border: none;
+            background-color: aqua;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .login-button button a {
+            text-decoration: none;
+            color: #fff6f6;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .mobile-menu-icon {
+            display: none;
+
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media screen and (max-width:730px) {
+            .nav-bar {
+
+                padding: 1.5rem 4rem;
+            }
+
+            .nav-item {
+                display: none;
+            }
+
+            .login-button {
+                display: none;
+            }
+
+            .mobile-menu-icon {
+                display: block;
+            }
+
+            .mobile-menu-icon button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+
+            }
+
+            .mobile-menu ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1rem;
+                border-radius: 5px;
+                border: 3px solid black;
+            }
+
+
+            .mobile-menu .nav-item {
+                display: block;
+                padding: 1rem 2rem;
+            }
+
+            .mobile-menu .login-button :no-button {
+                width: 100%;
+            }
+
+
+}
+
+
+            footer{
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                color:white;
+                background-color: black;
+                
+
+            }
+    </style>
+
+
+    <title>Site de paisagens</title>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Paisagens Turisticas</h1>
+            </div>
+
+
+            <div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="https://brasilescola.uol.com.br/brasil/o-turismo-no-brasil.htm"
+                            class="nav-link">Paisagens Turisticas</a></li>
+
+
+                    <li class="nav-item"><a href="https://www.melhoresdestinos.com.br/paisagens-lindas.html"
+                            class="nav-link">Paisagens Naturais</a></li>
+
+
+                    <li class="nav-item"><a href="https://brasilescola.uol.com.br/geografia/definicao-de-paisagem.htm"
+                            class="nav-link">Sobre</a></li>
+
+
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon"></div>
+            <button onclick="menuShow()"><img class="icon" src="imagens/icons8-menu.svg"></button>
+        </nav>
+
+
+
+
+
+        </div>
+    </header>
+
+    <main>
+
+        <h2>O que é uma Paisagem ?</h2>
+
+        <img src="imagens/F2.jpg" alt="paisagem turistica">
+
+        <br>
+        <p> A análise e compreensão do espaço geográfico, objeto de estudo da Geografia, são feitas a partir de um
+            conjunto de categorias que nos permite apreender os fenômenos que ocorrem a partir de diferentes
+            abordagens. Essas categorias são: região, território, lugar e paisagem.
+
+            Em um primeiro momento, a palavra paisagem pode ser associada a tudo aquilo que nos é aprazível aos
+            olhos. No entanto, quando adicionamos o viés geográfico, esse termo também contempla a percepção por
+            meio dos sentidos, mas adquire um significado bem mais abrangente.
+
+            A paisagem geográfica, assim, pode ser definida como todos os elementos do espaço que os nossos sentidos
+            conseguem captar ou perceber e interpretar.
+            "Embora para aqueles que a observam a paisagem represente o momento presente, ela se transforma no tempo e
+            carrega em si a materialização dessa passagem temporal. A maneira como a sociedade interage com os elementos
+            a sua volta, as diversas formas de trabalho e as técnicas que representam um determinado período: todos
+            esses aspectos se encontram expressos nas paisagens, nas quais presente e passado podem coexistir.
+
+            Um exemplo são os centros das grandes cidades, que na maioria das vezes preservam estruturas de épocas
+            anteriores (prédios antigos, por exemplo, muitas vezes com funções diferentes da pensada originalmente)
+            junto de elementos atuais, representantes do período técnico recente.
+
+            Levando em consideração uma escala temporal menor, a paisagem que é observada nos centros urbanos pela manhã
+            não é a mesma vista ao final da tarde, sofrendo alterações ao longo do dia. As modificações na paisagem
+            podem ser observadas, portanto, em diversas escalas de tempo.
+
+            Diretamente associada aos sentidos, a paisagem não é idêntica para todos, uma vez que a percepção dos
+            lugares varia de acordo com o observador. Sendo assim, duas pessoas em um mesmo local podem descrever a
+            paisagem que estão vendo e sentindo de formas distintas."
+
+        </p>
+
+    </main>
+
+
+
+    <footer>SAMUEL RODRIGUES DE LIRA - SENAI BARUERI</footer>
+
+</body>
+
+
+
+</html>
